@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Pokemon Information</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                      <% Object.keys(data).forEach((key) => { %>
+                            <div class="card-body">
+                                <h2>Name:</h2>
+                          <h3><%= data[key].name %></h3>
+                          <img src="<%= data[key].sprites.front_default %>" alt="<%= data[key].name %>">
+                
+                         <h2>Order:</h2>
+                         <h3><%=data[key].order %> </h3>
+                        </div>
+                      <% }) %>
+                    </div>
+                    </div>
+                </div>
+            </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
